@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bill Calculator</title>
+</head>
+<body>
+    <div class="app-box">
+
+        <div class="settings">
+            <div class="tip-set">
+                <div class="tip-line2">
+                    <span>Tip %</span>
+                    <span id="tip-percentage">5%</span>
+                </div>
+                <input type="range" min="0" value="5" max="20" id="tip">
+            </div>
+            <div class="people">
+                <div class="number-line">
+                    <span>Number of people</span>
+                    <span id="numpop">2</span>
+                </div>
+                <div class="people-slider">
+                    <input type="range" min="1" max="20" value="0" id="people">
+                </div>
+            </div>
+        </div>
+
+        <div class="bill-line">
+            <span>Bill</span>
+            <div class="value-box">
+                <span>€</span>
+                <input type="text" name="" id="bill-value" placeholder="0.00">
+            </div>
+        </div>
+
+        <div class="tip-line">
+            <span>Tip</span>
+            <div id="tip-total">200 €</div>
+        </div>
+
+        
+
+        <div class="total-box">
+            <div class="tip-line3">
+                <span>Tip / person</span>
+                <span id="total-tip">50 €</span>
+            </div>
+            <div class="total">
+                <span>Total / person</span>
+                <span id="total">500€</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub">Developed by Vladislav S. as an exercise</div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
